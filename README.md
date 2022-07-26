@@ -1,5 +1,6 @@
 To run the project, create a virtual environment in its folder and install the libraries from the requirements.txt file there
 then run the code in the app.py file
+myproject.rar -- Archive of projects on an already created virtual environment
 
 krapka_v_komi_blog_-v-1.1
 
