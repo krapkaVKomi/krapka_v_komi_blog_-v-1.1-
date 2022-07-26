@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Реєстрація 
+{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="text-center">
+        <img class="mb-4" src="https://lh3.googleusercontent.com/a-/AFdZucqx973LA5RisvbIpzavt4jG8gILP0Hks6H2dRaDYw=s360-p-no" alt="" width="100" height="100">
+        
+        <h1 class="h3 mb-3 fw-normal">Вітаємо вас <a class="btn btn-warning" href="\registration">Реєстрація</a></h1>
+        {% for i in erors %}
+        <h5 style="color:crimson ;">{{ i }}</h5>
+        {% endfor %}
+            
+    <form method="post">
+        <div class="form-floating">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Ведіть нік-нейм">
+            <label for="floatingInput">your nickname</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Пароль">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <input class="w-100 btn btn-warning" type="submit" value="Війти"></input>
+        <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+    </div>
+
+    </form>
+    </div>
+</div>
+
+
+{% endblock %}

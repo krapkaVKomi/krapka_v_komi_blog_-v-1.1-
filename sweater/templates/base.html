@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        
+          <span class="fs-4">krapka_v_komi</span>
+        </a>
+  
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="btn btn-light" href="/about">about</a>
+          <a class="btn btn-warning" href="/registration">login / registration</a>
+          <a class="btn btn-light" href="/posts">articles</a>
+          <a class="btn btn-warning" href="\create-article">create article</a>
+        </nav>
+      </div>
+
+    {% block body %}{% endblock %}
+
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          
+          <div class="col-6 col-md">
+            <h5>Рейтинг найкращих авторів</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Оновлення</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Дискусії</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Функції будуть додані в найблищих оновленнях</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Тут могла б бути ваша реклама</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
