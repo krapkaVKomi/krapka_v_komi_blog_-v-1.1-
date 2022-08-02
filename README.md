@@ -10,3 +10,4 @@ this is a python project with flsk, wiht HTML CSS, bootstrap and SQLite
 ![image](https://user-images.githubusercontent.com/98738329/180899595-14d70eb9-fa64-4fe3-918a-d1f07a7c75c4.png)
 ![image](https://user-images.githubusercontent.com/98738329/180899634-eb69aeef-12e2-41f5-83fe-78f1d6984e3d.png)
 ![image](https://user-images.githubusercontent.com/98738329/180899648-f88480c4-af95-4f1e-b663-9bf4f67b4184.png)
+![image](https://user-images.githubusercontent.com/98738329/182441059-7278890f-a9c6-45c1-aab8-b9670acd6612.png)
